@@ -4,7 +4,7 @@
 
 **Install proftpd** ➡️ *yum install proftpd*
 
-**Create certificates and place them here** ⬇️
+**Create certificates and place them here** ✔️
 
 ➡️ */etc/ssl/certs/cert.crt*
 
@@ -12,7 +12,9 @@
 
 **Go to the config file /etc/proftpd.conf**
 
-**Add the ports you want to use for your passive ftp** ➡️ PassivePorts    10000    10100
+**Add the ports you want to use for your passive ftp** ✔️
+
+➡️ PassivePorts    10000    10100
 
 **Comment these lines** ⬇️
 
@@ -22,16 +24,16 @@
          #  </IfModule>
          #</IfDefine>
          
-**Change your cert and key to where you placed them**
+**Change your cert and key to where you placed them** ✔️
 
 ➡️ TLSRSACertificateFile         /etc/ssl/certs/cert.crt
 
 ➡️ TLSRSACertificateKeyFile      /etc/ssl/private/key.key
 
-**Create a user if you need to**
+**Create a user if you need to** ✔️
 
 ➡️ adduser client
 
-**Now that everything is ready start the server**
+**Now that everything is ready start the server** ✔️
 
 ➡️ systemctl enable --now proftpd
