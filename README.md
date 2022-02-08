@@ -8,7 +8,7 @@
 
 ➡️ */etc/ssl/certs/cert.crt*
 
-➡️*/etc/ssl/certs/key.key*
+➡️ */etc/ssl/certs/key.key*
 
 **Go to the config file /etc/proftpd.conf**
 
