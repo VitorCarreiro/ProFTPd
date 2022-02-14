@@ -1,16 +1,16 @@
 # ProFTPd Config for EC2 / RedHat
 
-**You need to install the epel package to be able to install proftpd** ➡️ *yum install epel-release*
+**You need to install the epel package to be able to install proftpd** ➡️ `*yum install epel-release*`
 
-**Install proftpd** ➡️ *yum install proftpd*
+**Install proftpd** ➡️ `*yum install proftpd*`
 
 **Create certificates and place them here** ✔️
 
-➡️ `/etc/ssl/certs/cert.crt*
+➡️ `/etc/ssl/certs/cert.crt*`
 
-➡️ */etc/ssl/certs/key.key*`
+➡️ `*/etc/ssl/certs/key.key*`
 
-**Go to the config file /etc/proftpd.conf**
+**Go to the config file `nano /etc/proftpd.conf`**
 
 **Add the ports you want to use for your passive ftp, you can place it on the last line** ✔️
 
@@ -26,9 +26,9 @@
          
 **Change your cert and key to where you placed them** ✔️
 
-➡️ `TLSRSACertificateFile         /etc/ssl/certs/cert.crt
+➡️ `TLSRSACertificateFile         /etc/ssl/certs/cert.crt`
 
-➡️ TLSRSACertificateKeyFile      /etc/ssl/private/key.key`
+➡️ `TLSRSACertificateKeyFile      /etc/ssl/private/key.key`
 
 **Create a user if you need to** ✔️
 
