@@ -6,15 +6,15 @@
 
 **Create certificates and place them here** ✔️
 
-➡️ */etc/ssl/certs/cert.crt*
+➡️ `/etc/ssl/certs/cert.crt*
 
-➡️ */etc/ssl/certs/key.key*
+➡️ */etc/ssl/certs/key.key*`
 
 **Go to the config file /etc/proftpd.conf**
 
-**Add the ports you want to use for your passive ftp** ✔️
+**Add the ports you want to use for your passive ftp, you can place it on the last line** ✔️
 
-➡️ PassivePorts    10000    10100
+➡️ `PassivePorts    10000    10100`
 
 **Comment these lines** ⬇️
 
@@ -26,14 +26,14 @@
          
 **Change your cert and key to where you placed them** ✔️
 
-➡️ TLSRSACertificateFile         /etc/ssl/certs/cert.crt
+➡️ `TLSRSACertificateFile         /etc/ssl/certs/cert.crt
 
-➡️ TLSRSACertificateKeyFile      /etc/ssl/private/key.key
+➡️ TLSRSACertificateKeyFile      /etc/ssl/private/key.key`
 
 **Create a user if you need to** ✔️
 
-➡️ adduser client
+➡️ `adduser client`
 
 **Now that everything is ready start the server** ✔️
 
-➡️ systemctl enable --now proftpd
+➡️ `systemctl enable --now proftpd`
